@@ -1,0 +1,50 @@
+$bgcolorbody:pink;
+$fontsizebody:30px;
+body{
+	background-color:$bgcolorbody;
+	font-size:$fontsizebody;
+}
+div{
+	p{
+		color:red;
+	}
+	b{
+		color:black;
+	}
+}
+
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.innerbox { 
+
+	@include border-radius(10px);
+	height:130px;
+	background-color:red; 
+}
+.success
+{
+	@extend .innerbox;
+	background-color:#eee; 
+	color:green
+}
+.warning
+{
+	@extend .innerbox;
+	background-color:#eee; 
+	color:black
+}
+.error
+{
+	@extend .innerbox;
+	background-color:#eee; 
+	color:red
+}
+
+

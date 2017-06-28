@@ -1,0 +1,30 @@
+body {
+  background-color: pink;
+  font-size: 30px; }
+
+div p {
+  color: red; }
+div b {
+  color: black; }
+
+.innerbox, .success, .warning, .error {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  height: 130px;
+  background-color: red; }
+
+.success {
+  background-color: #eee;
+  color: green; }
+
+.warning {
+  background-color: #eee;
+  color: black; }
+
+.error {
+  background-color: #eee;
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */
